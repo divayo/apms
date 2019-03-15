@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APMS.Api</name>
+    </assembly>
+    <members>
+        <member name="M:APMS.Api.Controllers.LoginController.#ctor(APMS.Services.ILoginService,Microsoft.Extensions.Logging.ILogger{APMS.Api.Controllers.LoginController})">
+            <summary>
+            
+            </summary>
+            <param name="loginService"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:APMS.Api.Controllers.LoginController.Login(APMS.BusinessLogic.ViewModels.User.LoginViewModel)">
+            <summary>
+                Login user
+            </summary>
+            <param name="viewModel"><see cref="T:APMS.BusinessLogic.ViewModels.User.LoginViewModel"/></param>
+            <response code="200">Returns user token</response>
+            <response code="400">If the request is invalid</response>  
+            <response code="401">If the credentials are invalid</response>
+            <response code="500">If a server error occured</response>
+        </member>
+    </members>
+</doc>

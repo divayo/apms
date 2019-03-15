@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\APMS.BusinessLogic\APMS.BusinessLogic.csproj" />
+    <ProjectReference Include="..\APMS.Repositories\APMS.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>
